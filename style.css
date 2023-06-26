@@ -1,0 +1,138 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  /* ヘッダー */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-title h1 {
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  .header-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .header-menu li {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  .header-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* セクション */
+  section {
+    padding: 50px;
+    margin-top: 100px;
+  }
+  
+  section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  section ul {
+    list-style: none;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  
+  section li {
+    margin-bottom: 10px;
+  }
+  
+  /* about */
+  #about {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .about-img {
+    flex: 1;
+    margin-right: 50px;
+  }
+  
+  .about-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+  }
+  
+  .about-text {
+    flex: 2;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }  
+  
+  /* Link */
+  .link-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .link-list li {
+    margin: 0 10px;
+  }
+  
+  .link-list a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .fa {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .fa-twitter {
+    color: #1DA1F2;
+  }
+  
+  .fa-github {
+    color: #211F1F;
+  }
+  
+  .fa-linkedin {
+    color: #0A66C2;
+  }
+  
