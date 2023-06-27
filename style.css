@@ -10,8 +10,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    backdrop-filter: blur(3px);
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px 0;
+    padding: 7px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -149,22 +150,5 @@ body {
   .link-list a {
     text-decoration: none;
     color: black;
-  }
-  
-  .fa {
-    font-size: 24px;
-    margin-right: 10px;
-  }
-  
-  .fa-twitter {
-    color: #1DA1F2;
-  }
-  
-  .fa-github {
-    color: #211F1F;
-  }
-  
-  .fa-linkedin {
-    color: #0A66C2;
   }
   
