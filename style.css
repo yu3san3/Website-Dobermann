@@ -66,7 +66,7 @@ body {
   /* about */
   #about {
     background-color: #f0f0f0;
-    padding: 50px 0;
+    padding: 50px 15px;
   }
   
   .about-content {
@@ -86,7 +86,7 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 50px;
+    border-radius: 25%;
   }
   
   .about-text {
@@ -131,7 +131,8 @@ body {
 
   /* Screenshot */
   #screenshots img {
-    width: 320px;
+    width: 80%;
+    max-width: 320px;
     margin: 10px
   }
   
@@ -150,5 +151,30 @@ body {
   .link-list a {
     text-decoration: none;
     color: black;
+  }
+
+  @media screen and (max-width: 480px) {
+    /* ヘッダーのメニューを非表示にする */
+    .header-menu {
+      display: none;
+    }
+  
+    /* aboutセクションの画像とテキストを縦に並べる */
+    .about-content {
+      flex-direction: column;
+    }
+  
+    .about-img {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    /* Screenshotセクションの画像を中央揃えにする */
+    #screenshots ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
   }
   
