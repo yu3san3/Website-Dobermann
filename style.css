@@ -2,10 +2,10 @@ body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
     margin: 0;
-  }
-  
-  /* ヘッダー */
-  header {
+}
+
+/* ヘッダー */
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -16,165 +16,174 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .header-title h1 {
+}
+
+.header-title h1 {
     font-size: 24px;
     margin-left: 20px;
-  }
-  
-  .header-menu ul {
+}
+
+.header-title a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-menu ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-right: 20px;
-  }
-  
-  .header-menu li {
+}
+
+.header-menu li {
     list-style: none;
     margin-left: 20px;
-  }
-  
-  .header-menu a {
+}
+
+.header-menu a {
     text-decoration: none;
     color: black;
     font-size: 16px;
     font-weight: bold;
-  }
-  
-  /* セクション */
-  section {
+}
+
+/* セクション */
+section {
     padding: 50px;
     margin-top: 100px;
-  }
-  
-  section h2 {
+}
+
+section h2 {
     font-size: 36px;
     margin-bottom: 20px;
-  }
-  
-  section ul {
+}
+
+section ul {
     list-style: none;
     font-size: 20px;
     margin-left: 20px;
-  }
-  
-  section li {
+}
+
+section li {
     margin-bottom: 10px;
-  }
-  
-  /* about */
-  #about {
+}
+
+/* about */
+#about {
     background-color: #f0f0f0;
     padding: 50px 15px;
-  }
-  
-  .about-content {
+}
+
+.about-content {
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
-  }
-  
-  .about-img {
+}
+
+.about-img {
     flex: 1;
     margin-right: 50px;
-  }
-  
-  .about-img img {
+}
+
+.about-img img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 25%;
-  }
-  
-  .about-text {
+}
+
+.about-text {
     flex: 2;
-  }
-  
-  .about-text h2 {
+}
+
+.about-text h2 {
     font-size: 2rem;
     margin-bottom: 30px;
-  }
-  
-  .about-text p {
+}
+
+.about-text p {
     font-size: 1.2rem;
     line-height: 1.6;
-  }
+}
 
-  /* Info */
-  #information article {
+/* Info */
+#information article {
     margin-bottom: 40px;
     padding: 40px 40px 35px;
     text-align: left;
     border-radius: 20px;
     background-color: #fff;
-  }
-  
-  #information article .text_date {
+}
+
+#information article .text_date {
     font-size: 0.85rem;
-  }
-  
-  #information article h2 {
+}
+
+#information article h2 {
     margin-bottom: 30px;
     padding-bottom: 12px;
     font-size: 1.15rem;
     line-height: 1.8em;
     border-bottom: 2px solid #d5c800;
-  }
-  
-  #information article .text_content {
+}
+
+#information article .text_content {
     line-height: 2.0em;
     font-size: 0.85rem;
-  }
+}
 
-  /* Screenshot */
-  #screenshots img {
-    width: 80%;
+/* Screenshot */
+#screenshots img {
+    width: 95%;
     max-width: 320px;
     margin: 10px
-  }
-  
-  /* Link */
-  .link-list {
+}
+
+/* Link */
+.link-list {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-  }
-  
-  .link-list li {
+}
+
+.link-list li {
     margin: 0 10px;
-  }
-  
-  .link-list a {
+}
+
+.link-list a {
     text-decoration: none;
     color: black;
-  }
+}
 
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+
     /* ヘッダーのメニューを非表示にする */
     .header-menu {
-      display: none;
+        display: none;
     }
-  
+
     /* aboutセクションの画像とテキストを縦に並べる */
     .about-content {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .about-img {
-      margin-right: 0;
-      margin-bottom: 20px;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
-  
+
+    .about-img img {
+        max-width: 210px;
+    }
+
     /* Screenshotセクションの画像を中央揃えにする */
     #screenshots ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
-  }
-  
+}
